@@ -3,38 +3,37 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Newbridge Cricket Club — Community Proposal</title>
- <meta name="description" content="Help bring a cricket ground to Newbridge, Co. Kildare. Sign the petition and join the effort.">
+ <title>Newbridge Cricket Club</title>
  <style>
- :root{--green:#2e7d32;--gold:#fdd835;--text:#222;--muted:#6b7280;--ink:#0f172a;--border:#e5e7eb}
- *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:#fff}
+ :root{--green:#2e7d32;--gold:#fdd835;--text:#222;--muted:#6b7280;--bg:#fff;--border:#e5e7eb}
+ *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
  a{color:var(--green);text-decoration:none} a:hover{text-decoration:underline}
- .container{max-width:1000px;margin:0 auto;padding:0 1rem}
- header{background:var(--green);color:#fff;position:sticky;top:0;z-index:10}
- .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
- .nav ul{list-style:none;display:flex;gap:1.2rem;margin:0;padding:0}
- .nav a{color:#fff;font-weight:700}
- .hero{background:linear-gradient(180deg, rgba(46,125,50,.12), transparent 60%);padding:2.5rem 0 2rem}
- h1{font-size:clamp(1.8rem,2.5vw + 1rem,2.6rem);margin:.2rem 0}
- p.lead{color:var(--muted);max-width:65ch;font-size:1.05rem}
- .cta-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
- .btn{display:inline-block;padding:.75rem 1.1rem;border-radius:10px;font-weight:800;border:2px solid var(--green);transition:.2s}
+ header{background:var(--green);color:#fff}
+ .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+ .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+ nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+ nav a{color:#fff;font-weight:600}
+ .hero{background:linear-gradient(180deg, rgba(46,125,50,.12), transparent 60%);padding:2rem 0 1.5rem}
+ h1{font-size:clamp(1.6rem,2.5vw + 1rem,2.4rem);margin:.2rem 0}
+ p{color:var(--muted)}
+ .cta-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+ .btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;font-weight:700;border:2px solid var(--green)}
  .btn.primary{background:var(--green);color:#fff}
- .btn.primary:hover{background:#1b5e20}
- section{padding:2rem 0}
- .card{border:1px solid var(--border);border-radius:12px;padding:1.2rem;background:#fff}
- h2{margin:.3rem 0 1rem}
- ul{padding-left:1.2rem}
- footer{background:var(--ink);color:#e2e8f0;padding:1.8rem 0;margin-top:2rem}
- .small{font-size:.92rem;color:#cbd5e1}
+ .btn.secondary{background:#fff;color:var(--green)}
+ section{padding:1.6rem 0}
  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
- @media(max-width:850px){.grid{grid-template-columns:1fr}}
+ .card{border:1px solid var(--border);border-radius:10px;padding:1rem;background:#fff}
+ h2{margin:.3rem 0 1rem}
+ ul{padding-left:1.1rem}
+ footer{background:#0f172a;color:#e2e8f0;padding:1.6rem 0;margin-top:2rem}
+ .small{font-size:.9rem;color:#cbd5e1}
+ @media(max-width:800px){.grid{grid-template-columns:1fr}}
  </style>
 </head>
 <body>
 
 <header>
- <div class="container nav">
+ <div class="container header-inner">
  <div><strong>Newbridge Cricket Club</strong></div>
  <nav>
  <ul>
@@ -42,6 +41,9 @@
  <li><a href="#need">What We Need</a></li>
  <li><a href="#plan">Our Plan</a></li>
  <li><a href="#about">About</a></li>
+ <li><a href="#fixtures">Fixtures</a></li>
+ <li><a href="#join">Join</a></li>
+ <li><a href="#news">News</a></li>
  <li><a href="#contact">Contact</a></li>
  </ul>
  </nav>
@@ -52,18 +54,16 @@
  <!-- Hero -->
  <section class="hero">
  <div class="container">
- <h1>Let’s Build Cricket in Newbridge</h1>
- <p class="lead">
- We’re forming Newbridge’s own cricket club—open to adults and juniors, beginners and league players. 
- Add your name, support our petition, and help us secure a local ground.
- </p>
+ <h1>Let’s build cricket in Newbridge</h1>
+ <p>We’re forming Newbridge’s own cricket club—open to adults and juniors, beginners and league players. Add your name, join a training session, and help us secure a local ground.</p>
  <div class="cta-row">
- <a class="btn primary" href="https://chng.it/HmG9yt4s9n" target="_blank" rel="noopener">Sign the Petition</a>
+ <a class="btn primary" href="#petition">Sign the Petition</a>
+ <a class="btn secondary" href="#join">Become a member</a>
  </div>
  </div>
  </section>
 
- <!-- New Campaign Section: Petition -->
+ <!-- NEW CONTENT STARTS HERE -->
  <section id="petition">
  <div class="container">
  <div class="card">
@@ -74,49 +74,17 @@
  </div>
  </section>
 
- <!-- New Campaign Section: What We Need -->
  <section id="need">
  <div class="container">
  <h2>What We Need</h2>
  <div class="grid">
- <div class="card">
- <h3>A Ground</h3>
- <p>A council-supported site in Newbridge, safe and accessible for the whole community.</p>
- </div>
- <div class="card">
- <h3>A Playing Surface</h3>
- <p>An artificial cricket mat/wicket so we can host <em>tennis-ball and leather-ball cricket</em>.</p>
- </div>
- <div class="card">
- <h3>Facilities</h3>
- <p>Open access for juniors, families, and festivals. Basic equipment storage and safe boundaries.</p>
- </div>
+ <div class="card"><h3>A Ground</h3><p>A council-supported site in Newbridge, safe and accessible for the whole community.</p></div>
+ <div class="card"><h3>A Playing Surface</h3><p>An artificial cricket mat/wicket so we can host <em>tennis-ball and leather-ball cricket</em>.</p></div>
+ <div class="card"><h3>Facilities</h3><p>Open access for juniors, families, and festivals. Basic equipment storage and safe boundaries.</p></div>
  </div>
  </div>
  </section>
 
- <!-- What we’re planning (original content) -->
- <section>
- <div class="container">
- <h2>What We’re Planning</h2>
- <div class="grid">
- <div class="card">
- <h3>Ground in Newbridge</h3>
- <p>Working with local councillors and Kildare County Council to secure a cricket-ready pitch.</p>
- </div>
- <div class="card">
- <h3>Junior & Senior Cricket</h3>
- <p>Pathways for kids and adults. From soft-ball festivals to competitive league teams in Cricket Leinster.</p>
- </div>
- <div class="card">
- <h3>Coaching & Inclusivity</h3>
- <p>Level-1 coaches and safeguarding standards. We welcome everyone—no experience required.</p>
- </div>
- </div>
- </div>
- </section>
-
- <!-- New Campaign Section: Plan -->
  <section id="plan">
  <div class="container">
  <div class="card">
@@ -130,32 +98,62 @@
  </div>
  </div>
  </section>
+ <!-- NEW CONTENT ENDS HERE -->
 
- <!-- Original About Section -->
- <section id="about">
+ <!-- Original content continues -->
+ <section>
  <div class="container">
- <div class="card">
- <h2>About This Initiative</h2>
- <p>
- We are residents of Newbridge and nearby areas working to provide a local, inclusive cricket option for kids and adults. 
- With your support, Newbridge can have its own cricket club and ground for generations to come.
- </p>
- <ul>
- <li>Interim Coordinator: —</li>
- <li>Email: <a href="mailto:info@newbridgecricket.ie">info@newbridgecricket.ie</a> (placeholder)</li>
- </ul>
+ <h2>What we’re planning</h2>
+ <div class="grid">
+ <div class="card"><h3>Ground in Newbridge</h3><p>Working with local councillors and Kildare County Council to secure a cricket-ready pitch for matches and training.</p></div>
+ <div class="card"><h3>Junior & Senior cricket</h3><p>Pathways for kids and adults. From soft-ball festivals to competitive league teams in Cricket Leinster.</p></div>
+ <div class="card"><h3>Coaching & inclusivity</h3><p>Level-1 coaches and safeguarding standards. We welcome everyone—no experience required.</p></div>
  </div>
  </div>
  </section>
 
- <!-- Original Contact Section -->
+ <section id="fixtures">
+ <div class="container">
+ <h2>Fixtures & Training</h2>
+ <p>Until our ground is confirmed, we’ll schedule soft-ball sessions and indoor nets as available.</p>
+ <table>
+ <thead><tr><th>Date</th><th>Event</th><th>Location</th><th>Notes</th></tr></thead>
+ <tbody>
+ <tr><td>—</td><td>Community soft-ball evening</td><td>TBD, Newbridge</td><td>All welcome, equipment provided</td></tr>
+ <tr><td>—</td><td>Indoor nets</td><td>TBD (Kildare)</td><td>Register interest on the Join page</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <section id="join">
+ <div class="container">
+ <h2>Become a Member</h2>
+ <p>Register your interest and we’ll keep you updated on training, meetings with the council, and club milestones. No fees until facilities are confirmed.</p>
+ <p><a class="btn primary" href="#">Membership Form (coming soon)</a></p>
+ </div>
+ </section>
+
+ <section id="news">
+ <div class="container">
+ <h2>Latest Updates</h2>
+ <div class="card"><h3>Petition launched</h3><p>We’ve launched a community petition to secure a cricket ground in Newbridge. Add your name and share with friends and neighbours.</p></div>
+ <div class="card"><h3>Meeting request sent</h3><p>We have requested a meeting with local councillors to discuss potential sites and next steps.</p></div>
+ </div>
+ </section>
+
+ <section id="about">
+ <div class="container">
+ <h2>About the Club</h2>
+ <p>Newbridge Cricket Club is a community-led initiative to bring cricket to Newbridge and wider Kildare. We’re currently gathering members, volunteers, and partners while we work with the council to secure a home ground.</p>
+ </div>
+ </section>
+
  <section id="contact">
  <div class="container">
- <div class="card">
  <h2>Contact</h2>
  <p>Email: <a href="mailto:info@newbridgecricket.ie">info@newbridgecricket.ie</a> (placeholder)</p>
- <p>WhatsApp group: (add link when ready)</p>
- </div>
+ <p>WhatsApp group: (link placeholder)</p>
  </div>
  </section>
 </main>
@@ -163,7 +161,7 @@
 <footer>
  <div class="container">
  <strong>Newbridge Cricket Club</strong>
- <p class="small">© 2025 • Community-led proposal to establish a cricket ground in Newbridge, Co. Kildare.</p>
+ <p class="small">© 2025 • Newbridge, Co. Kildare • Building cricket together.</p>
  </div>
 </footer>
 
