@@ -10,21 +10,25 @@
 *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:#fff}
 a{color:var(--green);text-decoration:none} a:hover{text-decoration:underline}
 .container{max-width:1000px;margin:0 auto;padding:0 1rem}
-header{background:var(--green);color:#fff;position:sticky;top:0}
+header{background:var(--green);color:#fff;position:sticky;top:0;z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
-.nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav ul{list-style:none;display:flex;gap:1.2rem;margin:0;padding:0}
 .nav a{color:#fff;font-weight:700}
-.hero{background:linear-gradient(180deg, rgba(46,125,50,.12), transparent 60%);padding:2rem 0 1.2rem}
-h1{font-size:clamp(1.6rem,2.5vw + 1rem,2.4rem);margin:.2rem 0}
-p.lead{color:var(--muted);max-width:65ch}
-.btn{display:inline-block;padding:.7rem 1rem;border-radius:10px;font-weight:800;border:2px solid var(--green)}
+.hero{background:linear-gradient(180deg, rgba(46,125,50,.12), transparent 60%);padding:2.5rem 0 2rem}
+h1{font-size:clamp(1.8rem,2.5vw + 1rem,2.6rem);margin:.2rem 0}
+p.lead{color:var(--muted);max-width:65ch;font-size:1.05rem}
+.cta-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+.btn{display:inline-block;padding:.75rem 1.1rem;border-radius:10px;font-weight:800;border:2px solid var(--green);transition:.2s}
 .btn.primary{background:var(--green);color:#fff}
-section{padding:1.8rem 0}
-.card{border:1px solid var(--border);border-radius:12px;padding:1rem;background:#fff}
+.btn.primary:hover{background:#1b5e20}
+section{padding:2rem 0}
+.card{border:1px solid var(--border);border-radius:12px;padding:1.2rem;background:#fff}
 h2{margin:.3rem 0 1rem}
-ul {padding-left:1.1rem}
-footer{background:var(--ink);color:#e2e8f0;padding:1.6rem 0;margin-top:2rem}
+ul{padding-left:1.2rem}
+footer{background:var(--ink);color:#e2e8f0;padding:1.8rem 0;margin-top:2rem}
 .small{font-size:.92rem;color:#cbd5e1}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:850px){.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -35,8 +39,8 @@ footer{background:var(--ink);color:#e2e8f0;padding:1.6rem 0;margin-top:2rem}
 <nav>
 <ul>
 <li><a href="#petition">Petition</a></li>
-<li><a href="#need">What we need</a></li>
-<li><a href="#plan">Our plan</a></li>
+<li><a href="#need">What We Need</a></li>
+<li><a href="#plan">Our Plan</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -45,64 +49,68 @@ footer{background:var(--ink);color:#e2e8f0;padding:1.6rem 0;margin-top:2rem}
 </header>
 
 <main>
+<!-- Hero -->
 <section class="hero">
 <div class="container">
 <h1>Bring Cricket to Newbridge</h1>
 <p class="lead">
-We’re a local group working to secure a cricket ground in Newbridge, Co. Kildare.
-Step 1 is community support. Step 2 is meeting the councillor and Kildare County Council to identify a site.
-Step 3 is forming the club and affiliating with Cricket Leinster.
+We’re building the case for Newbridge to have its own cricket ground.
+Step 1: gather community support.
+Step 2: meet with councillors and Kildare County Council.
+Step 3: form a registered club and affiliate with Cricket Leinster.
 </p>
-<p style="margin-top:1rem;">
+<div class="cta-row">
 <a class="btn primary" href="https://chng.it/HmG9yt4s9n" target="_blank" rel="noopener">Sign the Petition</a>
-</p>
-</div>
-</section>
-
-<section id="petition">
-<div class="container">
-<div class="card">
-<h2>1) Add Your Name: Petition</h2>
-<p>Show the council there’s real demand in Newbridge. More signatures = stronger case.</p>
-<p><a class="btn primary" href="https://chng.it/HmG9yt4s9n" target="_blank" rel="noopener">Go to Petition</a></p>
 </div>
 </div>
 </section>
 
+<!-- What we're planning / Petition / Needs -->
 <section id="need">
 <div class="container">
+<h2>What We’re Planning</h2>
+<div class="grid">
 <div class="card">
-<h2>What We Need in Newbridge</h2>
-<ul>
-<li><strong>A council-supported ground site</strong> in Newbridge suitable for community cricket.</li>
-<li><strong>Cricket playing surface:</strong> an artificial cricket mat / wicket so we can host <em>tennis-ball and leather-ball cricket</em>.</li>
-<li>Open access for juniors, families, and community festivals.</li>
-<li>Basic storage for equipment and safe boundary space.</li>
-</ul>
+<h3>1. Petition</h3>
+<p>Show the council that Newbridge wants cricket.
+<a href="https://chng.it/HmG9yt4s9n" target="_blank" rel="noopener">Add your name today.</a></p>
+</div>
+<div class="card">
+<h3>2. A Ground with a Mat</h3>
+<p>A council-supported cricket ground with an artificial wicket suitable for both tennis-ball and leather-ball cricket.</p>
+</div>
+<div class="card">
+<h3>3. Facilities</h3>
+<p>Open access for juniors, families, and festivals. Basic equipment storage and safe boundaries.</p>
+</div>
 </div>
 </div>
 </section>
 
+<!-- Plan -->
 <section id="plan">
 <div class="container">
 <div class="card">
-<h2>Our Plan</h2>
+<h2>Our Roadmap</h2>
 <ol>
-<li><strong>Community Support:</strong> Collect signatures (this petition).</li>
-<li><strong>Meet the Councillor / Council:</strong> Present the petition and request help identifying a suitable ground in Newbridge.</li>
-<li><strong>Form the Club:</strong> Elect interim committee (Chair, Secretary, Treasurer, Safeguarding), adopt a simple constitution.</li>
-<li><strong>Affiliate with Cricket Leinster:</strong> Governance, insurance, coaching support, and entry to competitions as we grow.</li>
+<li><strong>Community Support:</strong> Collect signatures on the petition.</li>
+<li><strong>Council Engagement:</strong> Meet councillors and Kildare County Council to secure a site.</li>
+<li><strong>Form the Club:</strong> Elect interim committee, adopt constitution.</li>
+<li><strong>Cricket Leinster:</strong> Affiliate for governance, insurance, and competitive pathways.</li>
 </ol>
-<p class="small">We will publish updates here as progress continues.</p>
 </div>
 </div>
 </section>
 
+<!-- About -->
 <section id="about">
 <div class="container">
 <div class="card">
 <h2>About This Initiative</h2>
-<p>We are residents of Newbridge and nearby areas working to provide a local, inclusive cricket option for kids and adults. If you want to help, please sign the petition.</p>
+<p>
+We are residents of Newbridge and nearby areas, working to provide a local, inclusive cricket option for kids and adults.
+With your support, Newbridge can have its own cricket ground and a club that thrives for generations.
+</p>
 <ul>
 <li>Interim Coordinator: —</li>
 <li>Email: <a href="mailto:info@newbridgecricket.ie">info@newbridgecricket.ie</a> (placeholder)</li>
@@ -111,6 +119,7 @@ Step 3 is forming the club and affiliating with Cricket Leinster.
 </div>
 </section>
 
+<!-- Contact -->
 <section id="contact">
 <div class="container">
 <div class="card">
