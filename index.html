@@ -7,186 +7,107 @@
   <meta name="description" content="Join the movement to establish Newbridge Cricket Club. Participate in tournaments, support community cricket, and help secure a local ground.">
   <meta name="keywords" content="Newbridge Cricket Club, Cricket Leinster, community cricket, Kildare sports">
   <meta name="author" content="Newbridge Cricket Club">
-  <meta property="og:title" content="Newbridge Cricket Club">
-  <meta property="og:description" content="Help us build a cricket club in Newbridge. Sign the petition, become a member, and support local cricket.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yogz88.github.io/newbridge-cricket-club">
   <style>
-    :root {
-      --green: #2e7d32;
-      --gold: #fdd835;
-      --text: #222;
-      --muted: #6b7280;
-      --bg: #fff;
-      --border: #e5e7eb;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-    }
-    a {
-      color: var(--green);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    header {
-      background: var(--green);
-      color: #fff;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: .8rem 0;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: #fff;
-      font-weight: 600;
-    }
-    .hero {
-      background: linear-gradient(180deg, rgba(46,125,50,.12), transparent 60%);
-      padding: 2rem 0 1.5rem;
-    }
-    h1 {
-      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.4rem);
-      margin: .2rem 0;
-    }
-    p {
-      color: var(--muted);
-    }
-    .cta-row {
-      display: flex;
-      gap: .6rem;
-      flex-wrap: wrap;
-      margin-top: .8rem;
-    }
-    .btn {
-      display: inline-block;
-      padding: .6rem .9rem;
-      border-radius: 8px;
-      font-weight: 700;
-      border: 2px solid var(--green);
-    }
-    .btn.primary {
-      background: var(--green);
-      color: #fff;
-    }
-    .btn.secondary {
-      background: #fff;
-      color: var(--green);
-    }
-    section {
-      padding: 1.6rem 0;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-    }
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem;
-      background: #fff;
-    }
-    h2 {
-      margin: .3rem 0 1rem;
-    }
-    ul {
-      padding-left: 1.1rem;
-    }
-    footer {
-      background: #0f172a;
-      color: #e2e8f0;
-      padding: 1.6rem 0;
-      margin-top: 2rem;
-    }
-    .small {
-      font-size: .9rem;
-      color: #cbd5e1;
-    }
-    @media(max-width:800px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #222; }
+    header, footer { background: #2e7d32; color: #fff; padding: 1rem; text-align: center; }
+    .container { max-width: 1000px; margin: auto; padding: 1rem; }
+    h1, h2, h3 { color: #2e7d32; }
+    .card { background: #f9f9f9; padding: 1rem; margin: 1rem 0; border-radius: 8px; border: 1px solid #ccc; }
+    .btn { display: inline-block; padding: 0.5rem 1rem; background: #2e7d32; color: #fff; text-decoration: none; border-radius: 5px; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; justify-content: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
   </style>
 </head>
 <body>
-
 <header>
-  <div class="container header-inner">
-    <div><strong>Newbridge Cricket Club</strong></div>
-    <nav>
-      <ul>
-        <li><a href="#petition">Petition</a></li>
-        <li><a href="#need">What We Need</a></li>
-        <li><a href="#plan">Our Plan</a></li>
-        <li><a href="#accreditation">Accreditation</a></li>
-        <li><a href="#fixtures">Fixtures</a></li>
-        <li><a href="#join">Join</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <h1>Newbridge Cricket Club</h1>
+  <nav>
+    <ul>
+      <li><a href="#petition">Petition</a></li>
+      <li><a href="#need">What We Need</a></li>
+      <li><a href="#plan">Our Plan</a></li>
+      <li><a href="#accreditation">Accreditation</a></li>
+      <li><a href="#fixtures">Fixtures</a></li>
+      <li><a href="#join">Join</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-
-<main>
-  <section class="hero">
-    <div class="container">
-      <h1>Let’s build cricket in Newbridge</h1>
-      <p>We’re forming Newbridge’s own cricket club—open to adults and juniors, beginners and league players. Add your name, join a training session, and help us secure a local ground.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#petition">Sign the Petition</a>
-        <a class="btn secondary" href="#join">Become a member</a>
-      </div>
-    </div>
+<div class="container">
+  <section class="card">
+    <h2>Hero</h2>
+    <p>We’re forming Newbridge’s own cricket club—open to adults and juniors, beginners and league players. Add your name, join a training session, and help us secure a local ground.</p>
+    <p><a class="btn" href="#petition">Sign the Petition</a> <a class="btn" href="#join">Become a Member</a></p>
   </section>
-
-  <section id="plan">
-    <div class="container card">
-      <h2>Our Plan</h2>
-      <ol>
-        <li><strong>Community Support:</strong> Collect signatures on the petition.</li>
-        <li><strong>Council Engagement:</strong> Meet councillors and Kildare County Council to secure a site.</li>
-        <li><strong>Form the Club:</strong> Elect interim committee, adopt constitution.</li>
-        <li><strong>Cricket Leinster:</strong> Affiliate for governance, insurance, and competitive pathways.</li>
-      </ol>
-    </div>
+  <section id="petition" class="card">
+    <h2>Petition</h2>
+    <p>Show the council there’s real demand in Newbridge. More signatures = stronger case.</p>
+    <p><a class="btn" href="https://chng.it/HmG9yt4s9n" target="_blank">Go to Petition</a></p>
   </section>
-
-  <!-- Add other sections here like #petition, #need, #accreditation, etc. -->
-
-</main>
-
+  <section id="need" class="card">
+    <h2>What We Need</h2>
+    <ul>
+      <li>A council-supported ground in Newbridge</li>
+      <li>An artificial cricket mat/wicket for tennis-ball and leather-ball cricket</li>
+      <li>Basic facilities: toilets, storage, safe boundaries</li>
+    </ul>
+  </section>
+  <section id="plan" class="card">
+    <h2>Our Plan</h2>
+    <ol>
+      <li>Gather community support through petition</li>
+      <li>Engage with Kildare County Council</li>
+      <li>Form the club with interim committee</li>
+      <li>Affiliate with Cricket Leinster</li>
+    </ol>
+  </section>
+  <section id="accreditation" class="card">
+    <h2>Accreditation</h2>
+    <p>To participate in Cricket Leinster leagues, clubs need:</p>
+    <ul>
+      <li>A safe, well-maintained ground</li>
+      <li>Toilets and basic clubhouse</li>
+      <li>Governance: Chair, Secretary, Treasurer, Auditor</li>
+    </ul>
+  </section>
+  <section id="fixtures" class="card">
+    <h2>Fixtures & Training</h2>
+    <table>
+      <thead><tr><th>Date</th><th>Event</th><th>Location</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>—</td><td>Community soft-ball evening</td><td>TBD, Newbridge</td><td>All welcome, equipment provided</td></tr>
+        <tr><td>—</td><td>Indoor nets</td><td>TBD (Kildare)</td><td>Register interest on the Join page</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="join" class="card">
+    <h2>Become a Member</h2>
+    <p>Register your interest and we’ll keep you updated. No fees until facilities are confirmed.</p>
+    <p><a class="btn" href="#">Membership Form (coming soon)</a></p>
+  </section>
+  <section id="news" class="card">
+    <h2>Latest Updates</h2>
+    <ul>
+      <li>Petition launched to secure a cricket ground</li>
+      <li>Meeting requested with local councillors</li>
+    </ul>
+  </section>
+  <section id="about" class="card">
+    <h2>About the Club</h2>
+    <p>Newbridge Cricket Club is a community-led initiative. Unlike Naas and North Kildare, Newbridge has no official club. We aim to unite local groups and build a lasting cricket community.</p>
+  </section>
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:info@newbridgecricket.ie">info@newbridgecricket.ie</a></p>
+    <p>WhatsApp group: (link placeholder)</p>
+  </section>
+</div>
 <footer>
-  <div class="container">
-    <strong>Newbridge Cricket Club</strong>
-    <p class="small">© 2025 • Newbridge, Co. Kildare • Building cricket together.</p>
-  </div>
+  <p>&copy; 2025 Newbridge Cricket Club</p>
 </footer>
-
 </body>
 </html>
